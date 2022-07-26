@@ -1,0 +1,155 @@
+:root{
+  --blue-docker: rgb(1,44,102);
+  --blue-button: rgb(1,63,140);
+  --blue-light: rgb(43,163,204);
+  --ligth-gray: rgb(233,235,238);  
+  --text-white: white;
+  --blue-text: rgb(12,33,74);
+  --gray-text: rgb(124, 130, 134);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--blue-docker)
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  font-weight: bold;
+}
+
+header > nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;    
+}
+
+header > nav > .header-sign{
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header > nav > ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;  
+  width: 60%;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--text-white);  
+}
+
+.link:hover{
+  text-decoration: underline;
+}
+
+.btn{
+  color: var(--text-white);
+  background-color: var(--blue-button);
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 4%;  
+  font-weight: bold;
+  font-size: 1.01em;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: var(--text-white);
+  color: var(--blue-light);
+  transition: 0.2s;
+}
+
+main{
+  width: 100%;
+}
+
+main > .main-presentation{
+  color: var(--text-white);  
+  margin: 150px auto;
+  margin-bottom: 300px;
+  width: 65%;    
+}
+
+main > .main-presentation > h1{
+  font-size: 3.5em;
+  margin: 0;
+  line-height: 0.9em;
+}
+
+main > .main-presentation > h2{
+  font-size: 2em;
+  font-weight:500
+}
+
+main > .main-presentation > .presentation-btn{
+  width: 25%;
+}
+
+main > .main-info{
+  background-color: var(--ligth-gray);
+  width: 100%;
+  position: absolute;
+}
+
+main > .main-info > .new-info{
+  background-color: var(--text-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  padding: 2% 5%;
+  margin: 0 auto;  
+  border-radius: 10px;
+  position: relative;
+  top: -7em;
+  box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.64);
+}
+
+main > .main-info > .new-info > .info{  
+  padding-left: 5em;
+}
+
+main > .main-info > .new-info > .info > h1{
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--blue-light)
+}
+
+main > .main-info > .new-info > .info > h2{
+  margin: 0;
+  color: var(--blue-text);
+}
+
+
+main > .main-info > .new-info > .info > p{  
+  color: var(--gray-text);
+  font-weight: 500;
+  font-size: 1.2em;
+  width: 80%;
+}
+
+main > .main-info > .new-info > picture{  
+  width: 45%;
+}
+
+main > .main-info > .new-info > picture > img{  
+  width: 100%;
+}
+
+main > .main-info > .build-info{  
+  width: 80%;
+}
